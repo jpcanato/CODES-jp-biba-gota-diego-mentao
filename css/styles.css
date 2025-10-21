@@ -1,0 +1,264 @@
+:root {
+  --cor-primaria: #2c3e50;
+  --cor-secundaria: #3498db;
+  --cor-destaque: #e74c3c;
+  --cor-texto: #2c3e50;
+  --cor-fundo: #ecf0f1;
+  --cor-fundo-cartao: #ffffff;
+  --raio-borda: 0.5rem;
+  --sombra: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem;
+  flex: 1;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subtitulo {
+  font-size: 1.125rem;
+  color: var(--cor-secundaria);
+  margin-bottom: 2rem;
+}
+
+.titulo-secao {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1.5rem;
+  border-bottom: 0.125rem solid var(--cor-secundaria);
+  padding-bottom: 0.5rem;
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.link-navegacao {
+  display: block;
+  background-color: var(--cor-fundo-cartao);
+  padding: 1rem;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra);
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 500;
+}
+
+.link-navegacao:hover {
+  background-color: var(--cor-secundaria);
+  color: white;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.botao-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--cor-destaque);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: var(--raio-borda);
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #c0392b;
+}
+
+.botao-voltar img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.botao-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.botao-menu a {
+  background-color: var(--cor-secundaria);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--raio-borda);
+  transition: background-color 0.3s ease;
+}
+
+.botao-menu a:hover {
+  background-color: #2980b9;
+}
+
+.botao-menu img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.lista-amigos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartao-amigo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cor-fundo-cartao);
+  padding: 1rem;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra);
+  transition: all 0.3s ease;
+}
+
+.cartao-amigo:hover {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.avatar-amigo {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-amigo {
+  flex: 1;
+}
+
+.nome-amigo {
+  font-weight: 600;
+  color: var(--cor-primaria);
+  margin-bottom: 0.25rem;
+}
+
+.funcao-amigo {
+  color: var(--cor-secundaria);
+  font-size: 0.875rem;
+}
+
+.container-conversa {
+  background-color: var(--cor-fundo-cartao);
+  border-radius: var(--raio-borda);
+  padding: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+.mensagem-conversa {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: var(--raio-borda);
+  line-height: 1.5;
+}
+
+.mensagem-conversa:last-child {
+  margin-bottom: 0;
+}
+
+.remetente-mensagem {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.cartao-avaliacao {
+  background-color: var(--cor-fundo-cartao);
+  padding: 1.5rem;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra);
+  margin-bottom: 1.5rem;
+}
+
+.titulo-avaliacao {
+  font-size: 1.25rem;
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.avaliacao {
+  color: #f39c12;
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.texto-avaliacao {
+  line-height: 1.6;
+  color: #555;
+}
+
+.cartao-estabelecimento {
+  background-color: var(--cor-fundo-cartao);
+  padding: 1.5rem;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra);
+  margin-bottom: 1rem;
+}
+
+.nome-estabelecimento {
+  font-size: 1.25rem;
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.atendente-favorito {
+  color: var(--cor-secundaria);
+  font-style: italic;
+}
+
+@media (min-width: 48rem) {
+  .navegacao {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .link-navegacao {
+    flex: 1;
+    min-width: 12rem;
+  }
+  
+  .lista-amigos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+  
+  .titulo-principal {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .container {
+    padding: 2rem;
+  }
+  
+  .lista-amigos {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+}
