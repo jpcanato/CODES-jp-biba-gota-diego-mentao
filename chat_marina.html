@@ -1,23 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat com Marina</title>
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-  <h1>Chat - Marina</h1>
+  <div class="aplicativo">
+    <header class="cabecalho-app">
+      <a href="padaria_funcionarios.html" class="botao-voltar">
+        <img src="adicionar-imagem" alt="Voltar">
+      </a>
+      <h1 class="titulo">Marina</h1>
+      <img src="adicionar-imagem" alt="Marina" class="avatar">
+    </header>
 
-  <p>
-    <a href="amigos.html">
-      <img src="img/voltar.png" alt="Voltar para Amigos" width="50">
-    </a>
-  </p>
-
-  <p><strong>Marina:</strong> Olá Antônio! Que bom ver você por aqui de novo 😊</p>
-  <p><strong>Antônio:</strong> Oi Marina! Gosto muito quando você me atende, sempre lembra das minhas histórias.</p>
-  <p><strong>Marina:</strong> Claro! É sempre bom conversar, parece que a padaria fica mais aconchegante.</p>
-  <p><strong>Antônio:</strong> Verdade, me sinto muito à vontade quando venho aqui.</p>
-  <p><strong>Marina:</strong> Fico feliz! Pode deixar que nas próximas vezes vou pedir para te atender novamente.</p>
-  <p><strong>Antônio:</strong> Isso seria ótimo, gosto dessa continuidade no atendimento.</p>
+    <div class="conversa">
+      <div class="conversa-mensagens">
+        <div class="conversa-linha conversa-atendente">
+          Olá Antônio! Que bom ver você por aqui de novo 😊
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Oi Marina! Gosto muito quando você me atende, sempre lembra das minhas histórias.
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Claro! É sempre bom conversar, parece que a padaria fica mais aconchegante.
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Verdade, me sinto muito à vontade quando venho aqui.
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Fico feliz! Pode deixar que nas próximas vezes vou pedir para te atender novamente.
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Isso seria ótimo, gosto dessa continuidade no atendimento.
+        </div>
+      </div>
+      
+      <div class="conversa-entrada">
+        <input type="text" placeholder="Digite sua mensagem..." disabled>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+

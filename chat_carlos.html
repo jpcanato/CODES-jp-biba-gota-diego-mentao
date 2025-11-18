@@ -1,25 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat com Carlos</title>
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-  <h1>Chat - Carlos</h1>
+  <div class="aplicativo">
+    <header class="cabecalho-app">
+      <a href="mercado_funcionarios.html" class="botao-voltar">
+        <img src="adicionar-imagem" alt="Voltar">
+      </a>
+      <h1 class="titulo">Carlos</h1>
+      <img src="adicionar-imagem" alt="Carlos" class="avatar">
+    </header>
 
-  <p>
-    <a href="amigos.html">
-      <img src="img/voltar.png" alt="Voltar para Amigos" width="50">
-    </a>
-  </p>
-
-  <p><strong>Antônio:</strong> Olá Carlos! Preciso de uma ajuda: vou fazer um jantar em família e queria escolher um vinho.</p>
-  <p><strong>Carlos:</strong> Olá Antônio! Que ótimo. Qual é o prato principal do jantar?</p>
-  <p><strong>Antônio:</strong> Vai ser carne assada.</p>
-  <p><strong>Carlos:</strong> Perfeito! Recomendo um vinho tinto seco, que combina muito bem. Tenho uma sugestão de safra especial.</p>
-  <p><strong>Antônio:</strong> Parece ótimo. E você acha que combina com queijo também?</p>
-  <p><strong>Carlos:</strong> Sim! Inclusive sugiro harmonizar com queijo gorgonzola ou parmesão. Vai impressionar sua família.</p>
-  <p><strong>Antônio:</strong> Excelente, obrigado! Sempre boas recomendações.</p>
-  <p><strong>Carlos:</strong> Conte comigo, Antônio. É um prazer ajudar!</p>
+    <div class="conversa">
+      <div class="conversa-mensagens">
+        <div class="conversa-linha conversa-usuario">
+          Olá Carlos! Preciso de uma ajuda: vou fazer um jantar em família e queria escolher um vinho.
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Olá Antônio! Que ótimo. Qual é o prato principal do jantar?
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Vai ser carne assada.
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Perfeito! Recomendo um vinho tinto seco, que combina muito bem. Tenho uma sugestão de safra especial.
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Parece ótimo. E você acha que combina com queijo também?
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Sim! Inclusive sugiro harmonizar com queijo gorgonzola ou parmesão. Vai impressionar sua família.
+        </div>
+        
+        <div class="conversa-linha conversa-usuario">
+          Excelente, obrigado! Sempre boas recomendações.
+        </div>
+        
+        <div class="conversa-linha conversa-atendente">
+          Conte comigo, Antônio. É um prazer ajudar!
+        </div>
+      </div>
+      
+      <div class="conversa-entrada">
+        <input type="text" placeholder="Digite sua mensagem..." disabled>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+

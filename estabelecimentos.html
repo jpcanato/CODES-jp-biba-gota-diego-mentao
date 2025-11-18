@@ -1,19 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estabelecimentos - Evalia</title>
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-  <h1>Estabelecimentos</h1>
+  <div class="aplicativo">
+    <header class="cabecalho-app">
+      <a href="menu.html" class="botao-voltar">
+        <img src="adicionar-imagem" alt="Voltar">
+      </a>
+      <h1 class="titulo">Estabelecimentos</h1>
+      <div></div>
+    </header>
 
-  <p>
-    <a href="menu.html">
-      <img src="img/voltar.png" alt="Voltar para o Menu" width="50">
-    </a>
-  </p>
-
-  <p><a href="restaurantes.html">Restaurantes</a></p>
-  <p><a href="lojas.html">Lojas</a></p>
+    <div class="lista-categorias">
+      <a href="restaurantes.html" class="item-categoria" aria-label="Ver restaurantes">
+        <span>Restaurantes</span>
+        <span class="estrela" title="Marcar como favorito">★</span>
+      </a>
+      <a href="lojas.html" class="item-categoria" aria-label="Ver lojas">
+        <span>Lojas</span>
+        <span class="estrela" title="Marcar como favorito">★</span>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
+

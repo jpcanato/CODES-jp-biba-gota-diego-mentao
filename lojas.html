@@ -1,22 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lojas - Evalia</title>
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-  <h1>Lojas</h1>
+  <div class="aplicativo">
+    <header class="cabecalho-app">
+      <a href="estabelecimentos.html" class="botao-voltar">
+        <img src="adicionar-imagem" alt="Voltar">
+      </a>
+      <h1 class="titulo">Lojas</h1>
+      <div></div>
+    </header>
 
-  <p>
-    <a href="estabelecimentos.html">
-      <img src="img/voltar.png" alt="Voltar para Estabelecimentos" width="50">
-    </a>
-  </p>
+    <div class="conteudo">
+      <a href="mercado_funcionarios.html" class="cartao">
+        <div class="cartao-titulo">Mercado Favorito</div>
+        <div class="cartao-subtitulo">Produtos frescos e ótimas recomendações</div>
+        <div class="avaliacao avaliacao--5" aria-label="5 de 5 estrelas"></div>
+        <div class="card-meta">1 funcionário disponível</div>
+      </a>
 
-  <h2>Mercado Fismov</h2>
-  <p>Atendente favorito: Carlos</p>
-
-  <h2>Livraria matvar</h2>
-  <p>Atendente favorita: Juliana</p>
+      <a href="livraria_funcionarios.html" class="cartao">
+        <div class="cartao-titulo">Livraria Central</div>
+        <div class="cartao-subtitulo">Literatura clássica e conversas especiais</div>
+        <div class="avaliacao avaliacao--5" aria-label="5 de 5 estrelas"></div>
+        <div class="card-meta">1 funcionária disponível</div>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
+
