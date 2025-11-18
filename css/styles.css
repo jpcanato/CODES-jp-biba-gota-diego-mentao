@@ -23,6 +23,8 @@ body {
   margin: 0 auto;
   padding: 1rem;
   flex: 1;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .cabecalho {
@@ -92,9 +94,14 @@ body {
   background-color: #c0392b;
 }
 
-.botao-voltar img {
-  width: 1.5rem;
-  height: 1.5rem;
+.botao-voltar i {
+  font-size: 1.5rem;
+}
+
+.avatar-icon {
+  font-size: 3.75rem;
+  color: var(--cor-secundaria);
+  border-radius: 50%;
 }
 
 .botao-menu {
@@ -131,10 +138,11 @@ body {
   align-items: center;
   gap: 1rem;
   background-color: var(--cor-fundo-cartao);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: var(--raio-borda);
   box-shadow: var(--sombra);
   transition: all 0.3s ease;
+  min-height: 5rem;
 }
 
 .cartao-amigo:hover {
@@ -189,10 +197,11 @@ body {
 
 .cartao-avaliacao {
   background-color: var(--cor-fundo-cartao);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: var(--raio-borda);
   box-shadow: var(--sombra);
   margin-bottom: 1.5rem;
+  min-height: 6rem;
 }
 
 .titulo-avaliacao {
@@ -214,10 +223,11 @@ body {
 
 .cartao-estabelecimento {
   background-color: var(--cor-fundo-cartao);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: var(--raio-borda);
   box-shadow: var(--sombra);
   margin-bottom: 1rem;
+  min-height: 5rem;
 }
 
 .nome-estabelecimento {

@@ -44,9 +44,11 @@ body {
 .aplicativo { 
   max-width: var(--largura-maxima-app); 
   width: 100%;
-  min-height: 100vh;
-  background: var(--cor-branca);
+  height: 100vh;
+  background: #c0c0c0;
   box-shadow: 0 0 1.25rem rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .cabecalho-app { 
@@ -80,6 +82,15 @@ body {
   text-align: center;
 }
 
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
 .tela-inicial h1 {
   font-size: 2.5rem;
   color: var(--cor-marrom);
@@ -89,7 +100,7 @@ body {
 
 .tela-inicial p {
   font-size: 1rem;
-  color: var(--cor-cinza);
+  color: var(--cor-marrom);
   margin-bottom: calc(var(--espacamento) * 2);
   max-width: 17.5rem;
 }
@@ -127,12 +138,13 @@ body {
   background: var(--cor-branca);
   border: 0.0625rem solid var(--cor-cinza);
   border-radius: var(--raio);
-  padding: var(--espacamento);
-  margin-bottom: var(--espacamento);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
   transition: all 0.2s ease;
   display: block;
   text-decoration: none;
   color: inherit;
+  min-height: 5rem;
 }
 
 .cartao:hover {
@@ -141,16 +153,16 @@ body {
 }
 
 .cartao-titulo {
-  font-size: 1.125rem;
+  font-size: 1.375rem;
   font-weight: 600;
   color: var(--cor-preta);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .cartao-subtitulo {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--cor-cinza);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .cartao-meta {
@@ -311,20 +323,24 @@ body {
 
 .lista-categorias {
   padding: var(--espacamento);
+  flex: 1;
+  overflow-y: auto;
 }
 
 .item-categoria { 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem var(--espacamento);
+  padding: 1.5rem;
   background: var(--cor-branca);
   border: 0.0625rem solid var(--cor-cinza);
   border-radius: var(--raio);
-  margin-bottom: var(--espacamento);
+  margin-bottom: 1rem;
   text-decoration: none;
   color: var(--cor-preta);
   transition: all 0.2s ease;
+  min-height: 4rem;
+  font-size: 1.125rem;
 }
 
 .item-categoria:hover {
@@ -361,6 +377,8 @@ body {
 
 .conteudo {
   padding: var(--espacamento);
+  flex: 1;
+  overflow-y: auto;
 }
 
 .conteudo h1 {
@@ -385,15 +403,16 @@ body {
 .cartao-amigo {
   display: flex;
   align-items: center;
-  gap: var(--espacamento);
-  padding: var(--espacamento);
+  gap: 1rem;
+  padding: 1.5rem;
   background: var(--cor-branca);
   border: 0.0625rem solid var(--cor-cinza);
   border-radius: var(--raio);
-  margin-bottom: var(--espacamento);
+  margin-bottom: 1rem;
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
+  min-height: 5rem;
 }
 
 .cartao-amigo:hover {
